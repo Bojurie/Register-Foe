@@ -1,0 +1,22 @@
+.formField {
+  display: grid;
+  /* justify-content: center; */
+  gap: 10px;
+  width: 380px;
+}
+
+.form_field_wrappers {}
+
+input {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+label {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.submit {
+  padding: 10px 40px !important;
+}
