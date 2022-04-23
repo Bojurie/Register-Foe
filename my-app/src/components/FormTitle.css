@@ -5,4 +5,14 @@
     serif;
   font-weight: 400;
   text-transform: uppercase;
+  color: green;
+}
+
+.form-title h1 {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Old Standard TT',
+    serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }

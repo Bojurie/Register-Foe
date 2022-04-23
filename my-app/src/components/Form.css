@@ -88,8 +88,8 @@ button:hover {
 
 .signIn_link {
   padding: 10px;
-  /* letter-spacing: 1px; */
   font-weight: 400;
+  text-decoration: none;
 }
 
 .signIn_link span {

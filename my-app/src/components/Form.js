@@ -1,5 +1,7 @@
 import React from 'react';
+// import { Link } from 'react-router-dom'
 import './Form.css'
+import TextLink from './TextLink'
 
 const Form = () => {
   return (
@@ -33,11 +35,15 @@ const Form = () => {
           <button className='button'>
             <input type='submit' title='Submit'  />
           </button>
+
+          <div className='signIn_link'>
+              <TextLink to='/signin' text='Already Registered? Login'/>
+          </div>
           
         </form>
-        <div className='signIn_link'>
-            <p>Already a member?<span>Sign-In</span> </p>
-        </div>
+        {/* <div className='signIn_link'>
+            <p>Already a member?<span></span> </p>
+        </div> */}
       </div>
     </div>
   );

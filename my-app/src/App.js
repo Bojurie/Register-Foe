@@ -1,19 +1,23 @@
-import Form from './components/Form';
-import FormTitle from './components/FormTitle';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+
 import './App.css';
+// import SignIn from './components/SignIn';
+import SignInPage from './components/signIn-page';
+// import SignInPage from './components/signIn-page';
+import Home from './Home';
 
 function App() {
   return (
-    <div className="App">
-      <div className='App_wrapper'>
-          <div className='App_formTitle_wrapper'>
-            <FormTitle className='App_formTile' />
-          </div>
-          <div className='App_form_wrapper'>
-            <Form className='App_form' />
-          </div>
-      </div>
-    </div>
+    <Router>
+        <div className="App">
+          <Routes>
+             <Route path='/home' element={<Home/>} />
+              <Route path='/signin' exact element={<SignInPage/>}/>
+              {/* <Route path='/register' exact element={<Sign}/> */}
+          </Routes>
+        </div>
+    </Router>
+    
   );
 }
 
