@@ -1,0 +1,69 @@
+import React, { createContext, useContext, useEffect, useState } from "react";
+import {
+  getStoredUser,
+  removeStoredUser,
+  setStoredUser,
+} from "../LocalStorageManager/LocalStorageManager";
+import { loginUser } from "../AuthAPI/AuthAPI";
+
+const AuthContext = createContext();
+
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedUser = getStoredUser();
+    if (storedUser) {
+      setUser(storedUser);
+    }
+  }, []);
+
+  const login = async (formData) => {
+    try {
+      const { user, token } = await loginUser(formData);
+
+      setUser(user);
+      setStoredUser(user);
+      localStorage.setItem("token", token);
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  const logout = async () => {
+    try {
+      if (user) {
+        // Your logic to save user data to the database goes here
+        // For simplicity, let's assume a delay using setTimeout
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        console.log("User data saved to the database:", user);
+
+        setUser(null);
+        removeStoredUser();
+        localStorage.removeItem("token");
+        window.location.href = "/login";
+      } else {
+        console.log("User is not logged in");
+      }
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
+  };
+
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        login,
+        logout,
+        isAuthenticated: !!user,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export const useAuth = () => {
+  return useContext(AuthContext);
+};

@@ -1,0 +1,11 @@
+.Dashboard {
+  
+}
+.Dashboard-Wrapper{
+  padding: 50px;
+}
+
+.Top_dash {
+  display: flex;
+  justify-content: space-between;
+}

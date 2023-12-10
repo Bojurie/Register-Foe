@@ -1,0 +1,50 @@
+import React, { useState } from "react";
+
+const Dashboard = ({ user, onLogout }) => {
+  const [newEmail, setNewEmail] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [newUsername, setNewUsername] = useState("");
+
+  const handleUpdate = () => {
+    // Implement update logic, e.g., send a request to the server to update user information
+    console.log("Update successful");
+  };
+
+  return (
+    <div>
+      <h2>Welcome, {user.firstName}!</h2>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <button onClick={onLogout}>Logout</button>
+      </div>
+      <hr />
+      <h3>Update Account Information</h3>
+      <label>New Email:</label>
+      <input
+        type="text"
+        value={newEmail}
+        onChange={(e) => setNewEmail(e.target.value)}
+      />
+      <label>New Password:</label>
+      <input
+        type="password"
+        value={newPassword}
+        onChange={(e) => setNewPassword(e.target.value)}
+      />
+      <label>New Username:</label>
+      <input
+        type="text"
+        value={newUsername}
+        onChange={(e) => setNewUsername(e.target.value)}
+      />
+      <button onClick={handleUpdate}>Update</button>
+    </div>
+  );
+};
+
+export default Dashboard;
