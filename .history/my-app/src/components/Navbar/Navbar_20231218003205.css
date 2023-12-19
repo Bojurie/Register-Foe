@@ -1,0 +1,31 @@
+.Nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff1b1b, #ffffff 50%, #1b3fff);
+}
+
+.Logo {
+  width: 100%;
+}
+
+.Nav-Links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.Nav-Links a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+.span-Logo{
+  color: red;
+}

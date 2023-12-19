@@ -1,0 +1,23 @@
+.Nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  padding: 0px 50px;
+}
+.Logo{
+  width: 100px;
+  height: 100px;
+}
+.Logo img{
+  width: 100%;
+}
+
+.Links {
+  
+}
+.Links a{
+ text-decoration: none;
+ margin:  0px 10px;
+}

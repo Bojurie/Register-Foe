@@ -1,0 +1,14 @@
+.Nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+}
+.Logo{
+  width: 100px;
+  height: 100px;
+}
+.Logo img{
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+.path-animate {
+  animation: trace 2s forwards;
+}
+
+@keyframes trace {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

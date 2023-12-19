@@ -1,0 +1,42 @@
+import React from "react";
+import FormInput from "../FormInput";
+
+const LoginForm = ({ onSubmit, onChange, formData, error }) => {
+  const { username = "", password = "" } = formData;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const user = await onSubmit(formData);
+      if (user) {
+        console.log("Login successful:", user);
+      } else {
+        console.log("Login failed");
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <FormInput
+        label="Username:"
+        name="username"
+        value={username}
+        onChange={onChange}
+      />
+      <FormInput
+        label="Password:"
+        name="password"
+        type="password"
+        value={password}
+        onChange={onChange}
+      />
+      <button type="submit">Submit</button>
+      {error && <p className="error">{error}</p>}
+    </form>
+  );
+};
+
+export default LoginForm;
