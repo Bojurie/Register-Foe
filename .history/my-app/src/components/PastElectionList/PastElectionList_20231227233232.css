@@ -1,0 +1,27 @@
+/* .PastElections {
+  width: 34%;
+} */
+.PastElections h2{
+  padding: 0px 0px 20px;
+}
+
+.PastElections-Item {
+  height: 300px; /* Example height - adjust as needed */
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: blue gray; /* For Firefox, scrollbar color */
+}
+
+/* For Webkit browsers like Chrome and Safari */
+.PastElections-Item::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.PastElections-Item::-webkit-scrollbar-track {
+  background: gray; /* Track color */
+}
+
+.PastElections-Item::-webkit-scrollbar-thumb {
+  background-color: blue; /* Scrollbar color */
+  border-radius: 10px;
+}

@@ -17,7 +17,7 @@ const SearchBar = () => {
       setLoading(true);
       setError(null);
 
-      const response = await axios.get("http://localhost:3001/auth/election", {
+      // const response = await axios.get("http://localhost:3001/auth/election", {
         params: { query: userInput },
       });
 

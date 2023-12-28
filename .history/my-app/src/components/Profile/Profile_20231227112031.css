@@ -1,0 +1,21 @@
+.Profile{
+  width: 200px;
+}
+.Profile {
+  width: 150px
+}
+.Profile img{
+  width: 100%;
+}
+
+.Profile-Content{
+
+}
+
+.Profile-Content h4{
+  padding: 20px 0px;
+  font-size: 20px;
+}
+.Profile-Content p{
+  font-size: 17px;
+}

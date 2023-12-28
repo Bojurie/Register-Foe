@@ -17,7 +17,7 @@ const SearchBar = () => {
       setLoading(true);
       setError(null);
 
-      const response = await axios.get("http://localhost:3001/auth/election", {
+      const response = await axios.get("http://localhost:3001/election/upcoming-elections", {
         params: { query: userInput },
       });
 
@@ -35,7 +35,7 @@ const SearchBar = () => {
   useEffect(() => {
     // Make a GET request to fetch upcoming elections
     axios
-      .get("/api/upcoming-elections")
+      .get("/election/upcoming-elections")
       .then((response) => {
         const elections = response.data;
         setUpcomingElections(elections);

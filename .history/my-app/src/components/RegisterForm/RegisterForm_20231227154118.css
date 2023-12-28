@@ -1,0 +1,11 @@
+.Register-Admin-Link{
+  display: flex;
+  width: 100%;
+}
+.Register-Admin-Link input{
+  width: 50%;
+}
+.Register-Admin-Link label{
+
+  width: 50%;
+}

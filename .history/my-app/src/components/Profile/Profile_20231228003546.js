@@ -1,0 +1,51 @@
+import React from "react";
+import "./Profile.css";
+import placeholderImage from "../images/placeholder.png"; // Adjust the path as needed
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faThumbsUp,
+  faVoteYea,
+  faEye,
+} from "@fortawesome/free-solid-svg-icons";
+
+const Profile = ({ user, onLikeProfile, onVoteProfile }) => {
+  const navigate = useNavigate();
+
+  if (!user) {
+    return <div>Loading user profile...</div>;
+  }
+
+  const profileImageUrl = user.userProfileImage
+    ? user.userProfileImage
+    : placeholderImage;
+
+  const handleViewProfile = () => {
+    navigate(`/profile/${user._id}`);
+  };
+
+  return (
+    <div className="Profile">
+      <div className="Profile-Image">
+        <img src={profileImageUrl} alt="Profile" />
+      </div>
+      <div className="Profile-Content">
+        <h4>
+          {user.firstName} {user.lastName}
+        </h4>
+        <p>{user.email}</p>
+        <button onClick={handleViewProfile}>
+          <FontAwesomeIcon icon={faEye} /> 
+        </button>
+        <button onClick={() => onLikeProfile(user)}>
+          <FontAwesomeIcon icon={faThumbsUp} />
+        </button>
+        <button onClick={() => onVoteProfile(user)}>
+          <FontAwesomeIcon icon={faVoteYea} /> 
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;

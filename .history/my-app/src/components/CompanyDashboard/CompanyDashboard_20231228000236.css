@@ -1,0 +1,49 @@
+.ModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to ensure it's on top */
+}
+
+.ModalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* Any additional styling for the content */
+}
+
+.Dashboard-Content {
+    display: flex;
+    justify-content: center;
+}
+.ElectionList {
+  width: initial;
+}
+
+.CompanyDashboard-Top{
+  text-align: center;
+  padding: 30px 0px 50px;
+}
+
+.CompanyDashboard-Content{
+  display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.CompanyDashboard-Left {
+ width: 35%;
+}
+
+.Dashboard-Content{
+  width: 30%;
+}
+.CompanyDashboard-Right{
+  width: 35%;
+}
