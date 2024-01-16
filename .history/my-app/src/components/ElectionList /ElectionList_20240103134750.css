@@ -1,0 +1,8 @@
+.ElectionComponentContainer {
+  max-height: 300px; /* Set the desired fixed height here */
+  overflow: auto; /* Enable vertical scroll if content exceeds the height */
+}
+
+.ElectionComponent {
+  /* Add any other styles for your ElectionComponent here */
+}

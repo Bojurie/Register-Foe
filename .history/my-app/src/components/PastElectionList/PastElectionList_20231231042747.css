@@ -1,0 +1,29 @@
+.PastElections {
+    width: 300px; /* Example width */
+    height: 300px; /* Example height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.PastElections-Item {
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scroll */
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #888 #f0f0f0; /* Scrollbar styling */
+}
+
+/* Scrollbar styling for Webkit browsers */
+.PastElections-Item::-webkit-scrollbar {
+    width: 10px;
+}
+
+.PastElections-Item::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.PastElections-Item::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.PastElections-Item::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,8 @@
+.Topic{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+p {
+    margin-bottom: 0px;
+}

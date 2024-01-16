@@ -1,0 +1,59 @@
+/* .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.election-form-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control[multiple] {
+  height: auto; /* Adjust height automatically based on content */
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Style for options in the select box */
+.form-control[multiple] option {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+/* Hover effect for options */
+.form-control[multiple] option:hover {
+  background-color: #f8f9fa;
+}
+
+/* Style for selected options */
+.form-control[multiple] option:checked,
+.form-control[multiple] option:selected {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+/* Optional: Style to increase the size of the select box to show multiple options */
+.form-control[multiple] {
+  min-height: 150px; /* Adjust as needed */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px; /* Added padding for a little space on the sides */
+  }
+
+  .election-form-container {
+    padding: 10px;
+  }
+} */

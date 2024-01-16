@@ -1,0 +1,17 @@
+.TopicWidget {
+  max-width: 100%; /* Ensures component width is responsive */
+}
+
+.TopicsContainer {
+  max-height: 400px; /* Adjust this value based on your preference */
+  overflow-y: auto; /* Enables scrolling */
+  padding: 10px;
+  /* Add more styling as per your design requirements */
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+  .TopicsContainer {
+    max-height: 300px; /* Adjust for smaller screens */
+  }
+}
