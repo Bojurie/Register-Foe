@@ -1,0 +1,69 @@
+.ProfileDetailsModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+
+.ModalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Ensure it's above the backdrop */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Max width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfileDetail-Content {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.Profile-Content h4 {
+  margin-bottom: 10px;
+}
+
+.Profile-Content p {
+  margin-bottom: 5px;
+}
+
+.Profile-Buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.Profile-Buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.Profile-Buttons button:hover {
+  background-color: #0056b3;
+}
+
+.Profile-Buttons button:active {
+  background-color: #004085;
+}
+
+.ProfileDetail-Content-Bottom > span{
+  font-weight: bold;
+}

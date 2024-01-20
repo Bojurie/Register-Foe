@@ -1,0 +1,31 @@
+.ElectionList-Wrapper{
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0px;
+}
+.ElectionList {
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+  box-sizing: border-box; 
+  background: linear-gradient(135deg,#1b3dff79, #ffffff77 50%,  #ff1b1b8d);
+
+}
+
+.ElectionComponent {
+  margin-bottom: 10px;
+}
+
+.Heading {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .ElectionList {
+    max-width: 100%; /* Adjust width for smaller screens */
+    max-height: 300px; /* Maintain the same height */
+  }
+}

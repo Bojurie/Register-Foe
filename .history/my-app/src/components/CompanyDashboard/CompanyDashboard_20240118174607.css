@@ -1,0 +1,96 @@
+.ModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to ensure it's on top */
+}
+
+.ModalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* Any additional styling for the content */
+}
+
+.CompanyDashboard-SavedElection{
+background-color: #76654e;
+ border-radius: 10px;
+    padding: 10px;
+}
+
+.CompanyDashboard-PastElection{
+  background-color: #e7cdab;
+ border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+.CompanyDashboard-Elections {
+     background-color: #ffe7e6;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.CompanyDashboard-Topic{
+   background-color: thistle;
+    border-radius: 10px;
+    padding: 10px;
+}
+.CompanyDashboard-Center{
+   
+       
+}
+.CompanyDashboard-Top {
+  text-align: center;
+  padding: 20px 10px; /* Reduced padding for smaller screens */
+}
+
+.CompanyDashboard-Content {
+  display: flex;
+  justify-content: flex-end;
+    /* margin: 0px 50px; */
+  }
+
+.CompanyDashboard-Right {
+   
+}
+
+.CompanyDashboard-Left,
+.CompanyDashboard-Right,
+.Dashboard-Content {
+  width: 100%; /* Full width on smaller screens */
+}
+
+.CompanyDashboard-Bottom-Section {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .CompanyDashboard-Left,
+  .CompanyDashboard-Right,
+  .CompanyDashboard-Center {
+    width: 25%;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .Dashboard-Content {
+display: flex;  }
+
+  .CompanyDashboard-Top {
+    padding: 30px 0px 50px;
+  }
+}

@@ -1,0 +1,25 @@
+.Elections-Right {
+  width: 100%;
+}
+
+.ElectionComponent h2{
+  text-transform: capitalize;
+}
+
+.ElectionComponent> span{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ElectionComponent-Date {
+
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}

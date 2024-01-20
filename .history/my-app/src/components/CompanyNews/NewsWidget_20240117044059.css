@@ -1,0 +1,10 @@
+.news-widget {
+  max-height: 300px;
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add any additional styles you need here */

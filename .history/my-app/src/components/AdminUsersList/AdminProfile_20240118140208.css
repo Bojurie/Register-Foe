@@ -1,0 +1,24 @@
+.AdminProfile {
+    background: linear-gradient(135deg,#1b3dff79, #ffffff77 50%, #ff1b1b8d);
+  }
+
+.AdminProfile h2 {
+  /* Add styles for the heading if needed */
+}
+
+.AdminProfile-Wrapper {
+  /* Add any other styles for the AdminProfile-Wrapper container if needed */
+}
+
+.AdminProfile-Wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.AdminProfile-Wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.AdminProfile-Wrapper::-webkit-scrollbar-track {
+  background-color: #eee;
+}

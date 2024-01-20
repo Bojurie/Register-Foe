@@ -1,0 +1,29 @@
+.Profile-Wrapper {
+  padding: 20px 0px;
+  max-height: 300px; 
+  width: 90%; 
+  margin: auto; 
+  overflow-y: auto; 
+  flex-wrap: nowrap;
+  gap: 10px; 
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+@media (max-width: 768px) {
+  .Profile-Wrapper {
+    max-height: 400px; 
+    flex-direction: column; 
+  }
+}
