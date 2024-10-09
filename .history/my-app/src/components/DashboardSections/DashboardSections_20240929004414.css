@@ -1,0 +1,85 @@
+.CompanyDashboard-Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  width: 100%;
+  max-height: 100vh; /* Limit height to fit within the viewport */
+  overflow-y: auto; /* Scrollable container if content overflows */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.CompanyDashboard-Content-Main {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  margin: 5px 0;
+  height: 400px; /* Set height for scrollable content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff; /* Background color for better contrast */
+}
+
+.content-wrapper {
+  height: calc(100% - 60px); /* Leave space for the header */
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  border: 1px solid #1b3dff;
+  border-radius: 8px;
+  padding: 15px;
+  background: linear-gradient(135deg, #1b3dff79, #ffffff77 50%, #ff1b1b8d);
+  color: #24256d;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.CompanyDashboard-Content-Main.collapsed {
+  height: 50px; /* Height when collapsed */
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: #1238b0;
+  color: #ffffff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons:active {
+  background-color: #0f2d8a;
+  transform: scale(0.98);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .CompanyDashboard-Container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .CompanyDashboard-Container {
+    grid-template-columns: 1fr; /* Full-width for smaller screens */
+  }
+
+  .CompanyDashboard-Content-Main {
+    height: 300px; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .CompanyDashboard-Content-Main {
+    height: 250px; /* Further adjustment for very small screens */
+  }
+
+  .buttons {
+    font-size: 0.9rem; /* Reduced font size for buttons on small screens */
+  }
+}

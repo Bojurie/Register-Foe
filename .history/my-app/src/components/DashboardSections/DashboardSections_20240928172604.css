@@ -1,0 +1,22 @@
+.CompanyDashboard-Content {
+  display: flex;
+  flex-wrap: wrap;
+    width: 100%;
+}
+.CompanyDashboard-Content-Main {
+  width: 350px;
+  margin: 5px;
+}
+
+.buttons{
+  border: 1px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0px;
+    background: linear-gradient(135deg, #1b3dff79, #ffffff77 50%, #ff1b1b8d);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+.button:hover{
+
+}

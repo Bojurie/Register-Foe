@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.LandingPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff1b1b, #ffffff 50%, #1b3fff);
+  color: white;
+  gap: 20px;
+  padding: 20px;
+}
+
+.LandingLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.LandingLogo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.LandingLogo img:hover {
+  transform: scale(1.05);
+}
+
+.text-container {
+  display: grid;
+  gap: 15px;
+}
+.text-container h1{
+font-size: 2.5em;
+  font-weight: 700;
+}
+.text-container h3{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+  .LandingLogo {
+    max-width: 250px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .LandingPage {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .LandingLogo {
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+}

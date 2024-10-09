@@ -1,0 +1,19 @@
+.AdminProfile {
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .AdminProfile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .AdminProfile {
+    padding: 8px;
+  }
+}

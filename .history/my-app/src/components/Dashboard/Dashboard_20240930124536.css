@@ -1,0 +1,97 @@
+.Dashboard {
+  font-family: 'Digital-7', sans-serif; /* Use a digital font of your choice */
+  color: #ffffff;
+  padding: 20px;
+
+
+}
+
+/* .Dashboard-Main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} */
+
+
+.Dashboard-Main-Content {
+  display: flex;
+}
+.Dashboard-header {
+  text-align: center;
+  padding: 40px;
+}
+.DasboardContent{
+  width: 100%;
+}
+
+.Middle-Dashboard>SearchBar{
+  width: 30%;
+}
+
+.Middle-Dashboard {
+    display: flex;
+    padding: 50px 0px;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+p {
+  margin-bottom: 8px;
+}
+
+button {
+    background-color: #7d0808;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+
+}
+
+
+
+.Dashboard-Buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+button:hover {
+  background-color: #1e1e42;
+}
+
+
+.Nav-Links a {
+  list-style: none;
+  padding: 20px;
+}
+
+#cube-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotateX(45deg) rotateY(45deg);
+  perspective: 1000px;
+}
+
+/* Add styles for WeatherWidget, ElectionsWidget, and SearchBar as needed */
+
+@media (max-width: 768px) {
+  
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}

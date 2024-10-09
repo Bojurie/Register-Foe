@@ -1,0 +1,55 @@
+.UserProfile {
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  background: linear-gradient(135deg, #1b3dff79, #ffffff77 50%, #ff1b1b8d);
+  transition: all 0.3s ease; 
+  position: relative; 
+}
+
+.UserProfile:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.UserProfile h1 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.ProfilesContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between profile items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  background: #ffffff;
+}
+
+.ProfilesContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ProfilesContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ProfilesContainer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.ProfilesContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .UserProfile,
+  .ProfilesContainer {
+    max-height: 300px;
+  }
+}

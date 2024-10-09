@@ -1,0 +1,77 @@
+/* Profile Card Styles */
+.ProfileCard {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ProfileCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ProfileCard-ImageContainer {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ProfileCard-Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProfileCard-Details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ProfileCard-Name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ProfileCard-Info {
+  font-size: 14px;
+  color: #666;
+}
+
+.ProfileCard-Status {
+  font-size: 14px;
+  color: #28a745;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .ProfileCard {
+    padding: 10px;
+  }
+
+  .ProfileCard-ImageContainer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ProfileCard-Name {
+    font-size: 16px;
+  }
+
+  .ProfileCard-Info, .ProfileCard-Status {
+    font-size: 13px;
+  }
+}

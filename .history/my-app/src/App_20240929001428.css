@@ -1,0 +1,36 @@
+
+body{
+    background: linear-gradient(135deg, #ff1b1b, #ffffff 50%, #1b3fff);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+h1 {
+      font-size: 1.1rem;
+
+}
+@media only screen and (min-width: 992px){
+  h1{
+    text-align: center;
+  }
+  h2{
+    font-size: 23px;
+  }
+  h3{
+    font-size: 16px;
+    margin: 0px 10px;
+        text-transform: capitalize;
+  }
+  h4{
+    font-size: 15px;
+  }
+  p{
+    font-size: 15px;
+  }
+  a{
+    font-size: 14px;
+  }
+}
+
+/* font-family: 'Poppins', sans-serif; */

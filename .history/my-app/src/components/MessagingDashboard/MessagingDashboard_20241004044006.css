@@ -1,0 +1,59 @@
+.MessagingDashboard-Container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MessagingDashboard-Tabs {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.TabButton {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.TabButton.active {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.TabButton:not(.active):hover {
+  background-color: #e0e0e0;
+}
+
+.MessagingTabContent {
+  padding: 15px;
+}
+
+.AvailableUsersList,
+.SentMessagesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.UserItem,
+.SentMessageItem {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.UserItem:hover,
+.SentMessageItem:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}

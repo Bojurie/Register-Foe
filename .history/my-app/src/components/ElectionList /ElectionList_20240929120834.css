@@ -1,0 +1,63 @@
+.ElectionList-Wrapper {
+    border: 1px solid #1b3dff; 
+    border-radius: 8px;
+    padding: 10px; 
+    margin: 5px 0; 
+    background: linear-gradient(135deg, rgba(27, 61, 255, 0.47), rgba(255, 255, 255, 0.47) 50%, rgba(255, 27, 27, 0.55));
+    transition: all 0.3s ease; 
+}
+
+.ElectionList-Wrapper:hover {
+    transform: scale(1.01); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+      background-color: #0f2d8a;
+  /* transform: scale(0.98);  */
+}
+
+.ElectionList {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffffaa; 
+}
+.ElectionList-Wrapper:hover,
+.ElectionList-Wrapper:focus
+ {
+   background-color: #1238b0;
+  color: #ffffff;
+  transform: scale(1.02); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.ElectionComponent {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+
+.ElectionComponent:hover {
+    background: #f0f0f0; 
+}
+
+@media (max-width: 768px) {
+    .ElectionList {
+        max-width: 100%;
+        max-height: 250px; 
+    }
+
+    .ElectionList-Wrapper {
+        padding: 10px; 
+    }
+
+    .ElectionComponent {
+        padding: 8px; 
+    }
+}

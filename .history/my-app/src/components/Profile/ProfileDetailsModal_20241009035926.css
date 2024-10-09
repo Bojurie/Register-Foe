@@ -1,0 +1,159 @@
+/* Modal Backdrop */
+.ProfileDetailsModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Container */
+.ProfileDetailsModal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+/* Close Button */
+.CloseButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Profile Image and Content */
+.ProfileDetail-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfileImageContainer {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ProfileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProfileDetail-Content-Bottom {
+  text-align: center;
+}
+
+.ProfileDetail-Content-Bottom h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.user-info p span {
+  font-weight: 600;
+  color: #000;
+}
+
+.ProfileStatus {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Like and Admin buttons */
+.Profile-Buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Profile-Buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.Profile-Buttons button:hover {
+  background-color: #0056b3;
+}
+
+.Profile-Buttons button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.LikeMessage {
+  font-size: 14px;
+  color: #ff0000;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .ProfileDetailsModal {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .ProfileDetail-Content h4 {
+    font-size: 18px;
+  }
+
+  .ProfileDetail-Content p {
+    font-size: 13px;
+  }
+
+  .Profile-Buttons button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProfileDetailsModal {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .ProfileDetail-Content h4 {
+    font-size: 16px;
+  }
+
+  .Profile-Buttons button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,30 @@
+.ElectionComponent {
+  margin-bottom: 15px;
+  padding: 15px;
+    background: linear-gradient(135deg, #ffffff, #f8f8f8);  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+.ElectionComponent-Header {
+  text-align: center;
+}
+
+.ElectionComponent-Header p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .ElectionComponent {
+    padding: 12px;
+  }
+
+  .ElectionComponent-Header h3 {
+    font-size: 1.3rem;
+  }
+}

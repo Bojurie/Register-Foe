@@ -1,0 +1,81 @@
+.UserProfile {
+  border: 1px solid #5f5f6a62;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ProfilesContainer {
+  height: 300px; /* Fixed height */
+  overflow-y: auto; /* Makes children scrollable */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.ProfileItem {
+  width: 100%;
+  margin: 10px;
+}
+
+.ProfilesContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ProfilesContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ProfilesContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.ProfilesContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .ProfilesContainer {
+    height: 400px; 
+  }
+
+  .UserProfile {
+    padding: 15px;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .ProfilesContainer {
+    flex-direction: column;
+    align-items: center;
+    height: 400px; /* Ensure fixed height on small screens */
+  }
+
+  .ProfileItem {
+    max-width: 100%;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .ProfilesContainer {
+    height: 400px; /* Ensure fixed height on extra-small screens */
+  }
+
+ 
+
+  .UserProfile {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}

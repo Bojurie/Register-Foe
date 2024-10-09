@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+}
+
+.Login {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* min-height: 100vh; */
+  /* background: linear-gradient(135deg, #ff1b1b, #ffffff 50%, #1b3fff); */
+  padding: 20px;
+  /* border-radius: 20px; */
+}
+
+.Login-Container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 450px;
+  width: 100%;
+    padding: 30px 60px;
+      border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.Login-Container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #070448;
+  letter-spacing: 1px;
+}
+
+.Error-Message {
+  color: #ff1b1b;
+  text-align: center;
+  font-weight: bold;
+}
+
+.SignIn-Link {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.SignIn-Link a {
+  text-decoration: none;
+  color: #1b3fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.SignIn-Link a:hover {
+  color: #ff1b1b;
+}
+
+@media only screen and (max-width: 768px) {
+  .Login-Container {
+    padding: 30px;
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .Error-Message,
+  .SignIn-Link {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Login-Container {
+    padding: 20px;
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .Error-Message,
+  .SignIn-Link {
+    font-size: 0.85rem;
+  }
+}

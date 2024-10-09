@@ -1,0 +1,90 @@
+.Profile {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Profile:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Profile-Image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #1b3dff;
+}
+
+.Profile-Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.Profile:hover .Profile-Image img {
+  transform: scale(1.1);
+}
+
+.Profile-BasicInfo {
+  flex-grow: 1;
+}
+
+.Profile-BasicInfo h4 {
+  margin: 0;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.Profile-BasicInfo p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Profile {
+    padding: 10px;
+  }
+
+  .Profile-Image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Profile-BasicInfo h4 {
+    font-size: 1.3rem;
+  }
+
+  .Profile-BasicInfo p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Profile {
+    padding: 8px;
+  }
+
+  .Profile-Image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Profile-BasicInfo h4 {
+    font-size: 1.2rem;
+  }
+
+  .Profile-BasicInfo p {
+    font-size: 0.9rem;
+  }
+}

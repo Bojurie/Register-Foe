@@ -1,0 +1,149 @@
+/* Global styles for core tags */
+html, body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f6fa; /* Soft background for modern dashboard feel */
+  color: #333; /* Neutral dark color for text */
+}
+
+/* General settings for headings */
+h1, h2, h3, h4, p, a {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4; /* Improved readability */
+  color: #333;
+}
+
+/* Responsive design starts with mobile first */
+h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #555; /* Softer text for paragraph content */
+}
+
+a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets and larger screens (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: .9rem;
+  }
+
+  h2 {
+    font-size: .8rem;
+  }
+
+  h3 {
+    font-size: .7rem;
+    margin: 0px 10px;
+  }
+
+  h4 {
+    font-size: .8rem;
+  }
+
+  p {
+    font-size: .7rem;
+  }
+
+  a {
+    font-size: .6rem;
+  }
+}
+
+/* Laptops and desktops (min-width: 992px) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 0px 15px;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
+  a {
+    font-size: .7rem;
+  }
+}
+
+/* Large desktops (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: .9em;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+  a {
+    font-size: .9rem;
+  }
+}

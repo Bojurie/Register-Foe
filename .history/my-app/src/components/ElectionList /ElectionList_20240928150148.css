@@ -1,0 +1,56 @@
+/* Wrapper for the Election List */
+.ElectionList-Wrapper {
+    border: 1px solid #1b3dff; /* Changed to a specific blue color for better clarity */
+    border-radius: 8px;
+    padding: 15px; /* Increased padding for better spacing */
+    margin: 10px 0; /* Increased margin to provide more separation between elements */
+    background: linear-gradient(135deg, rgba(27, 61, 255, 0.47), rgba(255, 255, 255, 0.47) 50%, rgba(255, 27, 27, 0.55));
+    transition: all 0.3s ease; /* Added a smooth transition effect for hover states */
+}
+
+.ElectionList-Wrapper:hover {
+    transform: scale(1.01); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* Election List Styling */
+.ElectionList {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffffaa; /* Light background to enhance the contrast with text */
+}
+
+/* Individual Election Component */
+.ElectionComponent {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to make each item distinct */
+    transition: all 0.3s ease;
+}
+
+.ElectionComponent:hover {
+    background: #f0f0f0; /* Light grey background on hover for better user feedback */
+}
+
+/* Media Query for Responsive Behavior */
+@media (max-width: 768px) {
+    .ElectionList {
+        max-width: 100%;
+        max-height: 250px; /* Reduced height for smaller screens */
+    }
+
+    .ElectionList-Wrapper {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .ElectionComponent {
+        padding: 8px; /* Slight reduction in padding for smaller screens */
+    }
+}

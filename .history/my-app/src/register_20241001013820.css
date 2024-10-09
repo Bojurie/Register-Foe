@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.registerIn_page {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+background: linear-gradient(135deg, #ff1b1b, #ffffff 50%, #1b3fff);
+}
+
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 90px;
+  margin: 45px 100px;
+border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.register-form-header-wrapper {
+  width: 100%;
+}
+
+.register-form-header-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: 'Old Standard TT', serif;
+  color: #070448;
+}
+
+.register-form-header-title::after,
+.register-form-header-title::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+  background: white;
+  bottom: -1;
+  z-index: 100;
+}
+
+.register-form-header-title::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.register-form-header-title::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+
+.register-form-wrapper {
+  width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+  .register-wrapper {
+    padding: 40px 20px;
+  }
+
+  .register-form-header-title {
+    font-size: 1.5em;
+  }
+}

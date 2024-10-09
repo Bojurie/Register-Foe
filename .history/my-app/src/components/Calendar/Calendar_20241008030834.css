@@ -1,0 +1,65 @@
+/* Modal Styles */
+.full-screen-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 10000;
+}
+
+.full-screen-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  z-index: 11000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button inside modal */
+.full-screen-modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.full-screen-modal-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive modal adjustments */
+@media (max-width: 768px) {
+  .full-screen-modal-content {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .full-screen-modal-content button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .full-screen-modal-content {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .full-screen-modal-content button {
+    padding: 7px 15px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,50 @@
+.Admin-User-List {
+  max-height: 400px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #1b3dff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(235, 242, 250, 0.9));
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Admin-User-List:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.Admin-User-List-Header {
+
+  cursor: pointer;
+}
+
+.Admin-User-List-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.Admin-User-List-Container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Admin-User-List-Container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Admin-User-List {
+    padding: 10px;
+    margin: 8px 0;
+  }
+
+  .Admin-User-List-Header {
+    font-size: 1.6rem;
+  }
+}

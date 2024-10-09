@@ -1,0 +1,9 @@
+.CompanyDashboard-Content-Main {
+      border-radius: 8px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 0;
+    height: auto;
+    padding: 0px 20px;
+}

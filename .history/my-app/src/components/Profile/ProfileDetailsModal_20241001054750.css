@@ -1,0 +1,107 @@
+.ProfileDetailsModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.ProfileDetailsModal {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.CloseButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.ProfileDetail-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ProfileImageContainer {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ProfileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProfileDetail-Content-Bottom p {
+  margin: 0.5rem 0;
+}
+
+.ProfileDetail-Content-Bottom > p > span {
+  font-weight: bold;
+}
+
+.Profile-Buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.Profile-Buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Profile-Buttons button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.Profile-Buttons button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .ProfileDetailsModal {
+    padding: 1.5rem;
+  }
+
+  .ProfileDetail-Content {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .Profile-Buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,167 @@
+.CalendarWrapper {
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.calendar {
+  width: 100%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 61, 255, 0.47),
+    rgba(255, 255, 255, 0.47) 50%,
+    rgba(255, 27, 27, 0.55)
+  );
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.2rem;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  outline: none;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-day.today {
+  background-color: #ffeecc;
+}
+
+.calendar-day.with-reminder {
+  background-color: #b3e0ff;
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+
+.reminder-indicator {
+  color: red;
+  margin-left: 4px;
+}
+
+.admin-reminder {
+  background-color: lightblue;
+}
+
+.user-reminder {
+  background-color: lightgreen;
+}
+
+.full-screen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.full-screen-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .calendar-header {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .calendar-header button {
+    font-size: 1.2rem;
+  }
+
+  .calendar-days {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+    gap: 1px;
+    padding: 5px;
+  }
+
+  .calendar-day {
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .full-screen-modal-content {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-header {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .calendar-header button {
+    font-size: 1rem;
+  }
+
+  .calendar-days {
+    grid-template-columns: repeat(7, minmax(25px, 1fr));
+    gap: 1px;
+    padding: 5px;
+  }
+
+  .calendar-day {
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .full-screen-modal-content {
+    max-width: 90%;
+  }
+}
+
+/* Calendar Header Button Hover Effects */
+.calendar-header button:hover {
+  color: #ffcccc;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}

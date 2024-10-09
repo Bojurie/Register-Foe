@@ -1,0 +1,228 @@
+.calendar-wrapper {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.calendar-header:hover {
+  color: #007bff;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.calendar-day.today {
+  background-color: #ffeb99;
+  font-weight: bold;
+}
+
+.calendar-day.with-reminder {
+  background-color: #d1f7d6;
+}
+
+.calendar-day:hover {
+  background-color: #e6f0ff;
+  transform: scale(1.05);
+}
+
+.full-screen-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.full-screen-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 11000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.full-screen-modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.full-screen-modal-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.full-screen-modal-content input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  transition: border-color 0.3s ease;
+}
+
+.full-screen-modal-content input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.full-screen-modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.full-screen-modal-content button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.full-screen-modal-content button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.reminder-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reminder-actions label {
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.reminder-actions select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .full-screen-modal-content {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .full-screen-modal-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .full-screen-modal-content input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .full-screen-modal-content button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  .reminder-actions label {
+    font-size: 1rem;
+  }
+
+  .reminder-actions select {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .full-screen-modal-content {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .full-screen-modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .full-screen-modal-content input[type="text"] {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .full-screen-modal-content button {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+
+  .reminder-actions label {
+    font-size: 0.95rem;
+  }
+
+  .reminder-actions select {
+    font-size: 0.85rem;
+  }
+}
+

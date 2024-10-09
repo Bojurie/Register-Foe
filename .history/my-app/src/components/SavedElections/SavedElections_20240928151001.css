@@ -1,0 +1,31 @@
+.savedElections{
+      border: 1px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0px;
+    background: linear-gradient(135deg,#1b3dff79, #ffffff77 50%, #ff1b1b8d);
+        transition: all 0.3s ease; 
+
+
+}
+
+.savedElections:hover{
+  transform: scale(1.01); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.scrollable-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+@media screen and (max-width: 600px) {
+  .scrollable-container {
+    max-height: none;
+    overflow-y: visible;
+  }
+}

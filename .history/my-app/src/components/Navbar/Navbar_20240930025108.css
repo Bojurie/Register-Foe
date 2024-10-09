@@ -1,0 +1,133 @@
+/* General styles for Navbar */
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  z-index: 10;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.Logo img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.Nav-Links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Nav-Links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #24256d;
+  transition: color 0.3s;
+}
+
+.Nav-Links a:hover {
+  color: #007bff;
+}
+
+/* Mobile menu icon */
+.MobileMenuIcon {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 4px;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Nav-Links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transform: translateY(-10%);
+  }
+
+  .Nav-Links.open {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .Nav-Links li {
+    margin: 10px 0;
+  }
+
+  .MobileMenuIcon {
+    display: block;
+  }
+
+  .Logo img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Nav {
+    padding: 10px 15px;
+  }
+
+  .Nav-Links {
+    width: 100%;
+  }
+
+  .Logo img {
+    max-width: 60px;
+  }
+}

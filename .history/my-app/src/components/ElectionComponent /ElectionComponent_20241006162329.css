@@ -1,0 +1,50 @@
+.ElectionComponent {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ElectionComponent:hover {
+  background: #f9f9f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ElectionComponent h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.ElectionComponent p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.ElectionComponent ul {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.ElectionComponent-content{
+text-align: center;
+}
+.ElectionComponent li {
+  font-size: 1rem;
+  color: #444;
+  list-style: none;
+
+}
+
+@media (max-width: 768px) {
+  .ElectionComponent {
+    padding: 12px;
+  }
+
+  .ElectionComponent h2 {
+    font-size: 1.3rem;
+  }
+}

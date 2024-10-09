@@ -1,0 +1,118 @@
+.MessagingDashboard-Container {
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  transition: all 0.5s ease;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.MessagingDashboard-Header {
+  text-align: center;
+  padding: 10px;
+}
+
+.MessagingDashboard-Tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.MessagingTab {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.MessagingTab.active {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.MessagingTab:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+.MessagingDashboard-Content {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.NewMessageContainer,
+.InboxContainer,
+.OutboxContainer {
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.UserList {
+  list-style: none;
+  padding: 0;
+}
+
+.UserItem {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.UserItem:hover,
+.UserItem.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.NewMessageForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.NewMessageForm textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.NewMessageForm button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.NewMessageForm button:disabled {
+  background: #ccc;
+}
+
+.NewMessageForm button:hover {
+  background: #0056b3;
+}
+
+.MessageItem {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

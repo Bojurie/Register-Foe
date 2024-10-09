@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Register Page Styling */
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.registerWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.registerWrapper:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Header Styling */
+.registerFormHeader {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.registerFormTitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: 'Old Standard TT', serif;
+  color: #070448;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .registerWrapper {
+    padding: 20px;
+  }
+
+  .registerFormTitle {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .registerPage {
+    padding: 10px;
+  }
+
+  .registerWrapper {
+    padding: 15px;
+  }
+}
