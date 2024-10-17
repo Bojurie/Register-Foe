@@ -1,0 +1,18 @@
+.CompanyDashboard-Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.CompanyDashboard-Top h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.CompanyDashboard-Top .WeatherWidget {
+  flex: 0 0 auto;
+}

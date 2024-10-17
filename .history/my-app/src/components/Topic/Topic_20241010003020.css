@@ -1,0 +1,45 @@
+.Topic {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.AddComment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AddComment textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: none;
+}
+
+.AddComment button {
+  align-self: flex-end;
+  padding: 8px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .Topic {
+    padding: 12px;
+  }
+
+}

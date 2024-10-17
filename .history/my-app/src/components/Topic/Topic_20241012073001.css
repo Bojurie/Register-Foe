@@ -1,0 +1,73 @@
+.Topic {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Topic h4 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.Topic p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 5px 0;
+}
+
+.Topic-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #555;
+}
+
+.Topic-stats div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.AddComment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AddComment textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: none;
+}
+
+.AddComment button {
+  align-self: flex-end;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.AddComment button:hover {
+  background-color: #0056b3;
+}
+
+.MuiButtonBase-root{
+  font-size: 13px !important;
+}
+@media (max-width: 768px) {
+  .Topic {
+    padding: 12px;
+  }
+}
