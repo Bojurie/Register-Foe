@@ -1,0 +1,46 @@
+/* ElectionDisplay.css */
+.ElectionDisplayContainer {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.DisplayContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.ElectionText, .LeadingText {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.ElectionName, .CandidateName, .VotePercentage {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .ElectionDisplayContainer {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .ElectionText, .LeadingText {
+    font-size: 1.3rem;
+  }
+
+  .ElectionName, .CandidateName, .VotePercentage {
+    font-size: 1rem;
+  }
+}

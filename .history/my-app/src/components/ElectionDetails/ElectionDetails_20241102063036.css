@@ -1,0 +1,49 @@
+.ElectionDetails {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.election-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.whole-chart {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-section {
+  flex: 1 1 45%;
+  min-width: 300px;
+  height: 400px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .whole-chart {
+    flex-direction: column;
+  }
+
+  .chart-section {
+    height: 300px;
+  }
+
+  .election-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-section {
+    height: 250px;
+  }
+}

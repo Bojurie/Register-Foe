@@ -1,0 +1,46 @@
+.election-container {
+  margin: 20px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffffff, #f1f1f1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.election-container:hover {
+  background: #f9f9f9;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.election-details {
+  margin-top: 10px;
+  color: #666;
+}
+
+.details-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.candidates-section {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leading-candidate {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #ffce56;
+}

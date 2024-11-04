@@ -1,0 +1,73 @@
+/* Wrapper for the entire Election List component */
+.ElectionList-Wrapper {
+border: 1px solid rgba(215, 213, 213, 0.657);
+ border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  position: relative;
+}
+
+/* Add shadow effect on hover */
+.ElectionList-Wrapper:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Focus effect on Heading */
+.Heading:focus {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+/* Main Election List container */
+.ElectionList {
+  height: 450px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+/* Custom scrollbar for ElectionList */
+.ElectionList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ElectionList::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.ElectionList::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .ElectionList {
+    max-height: 300px;
+  }
+
+  .ElectionList-Wrapper {
+    padding: 15px;
+  }
+
+  .Heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ElectionList {
+    max-height: 250px;
+  }
+
+  .ElectionList-Wrapper {
+    padding: 10px;
+  }
+
+  .Heading {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,58 @@
+.NewsWidget-Wrapper {
+  padding: 15px;
+  margin: 10px 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  border: 1px solid rgba(215, 213, 213, 0.657);
+  border-radius: 10px;
+  height: 450px; /* Set max height */
+  display: flex;
+  flex-direction: column;
+}
+
+.NewsWidget-Wrapper:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.NewsWidget-Header {
+  font-weight: bold;
+  cursor: pointer;
+  position: sticky;
+  top: 0; /* Sticky position */
+  background-color: #f9f9f9; /* Background to avoid transparency */
+  z-index: 10; /* Ensure the header stays above content */
+  padding: 10px 0;
+}
+
+.news-widget {
+  flex: 1; /* Allow the widget to take remaining space */
+  overflow-y: auto; /* Scrollable content */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.news-widget-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .NewsWidget-Wrapper {
+    padding: 10px;
+  }
+
+  .news-widget {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NewsWidget-Wrapper {
+    padding: 8px;
+  }
+
+  .news-widget {
+    max-height: 200px;
+  }
+}

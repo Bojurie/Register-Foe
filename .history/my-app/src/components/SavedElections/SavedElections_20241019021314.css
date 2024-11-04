@@ -1,0 +1,29 @@
+.savedElections{
+        border-radius: 12px;
+    padding: 10px;
+    margin: 5px 0px;
+        transition: all 0.3s ease; 
+        background: #f9f9f9;
+
+  }
+
+.savedElections:hover{
+color: #ffffff;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scrollable-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+@media screen and (max-width: 600px) {
+  .scrollable-container {
+    max-height: none;
+    overflow-y: visible;
+  }
+}

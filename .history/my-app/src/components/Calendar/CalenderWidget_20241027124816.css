@@ -1,0 +1,21 @@
+.calendarWidget {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.modalContent {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.noRemindersText {
+  text-align: center;
+  color: gray;
+  font-size: 0.9rem;
+}

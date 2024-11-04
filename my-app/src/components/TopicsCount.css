@@ -1,0 +1,82 @@
+.topics-count-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+background-color: #f8f9fc;
+  border-radius: 10px;
+  box-shadow:0px 4px 12px rgb(40 64 74 / 49%);
+  margin: 15px 0;
+}
+
+.topics-count-box {
+  display: flex;
+  gap: 20px;
+}
+
+.topics-info {
+  text-align: center;
+}
+
+.icon-container {
+  display: inline-block;
+}
+
+.topics-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.current-icon {
+  color: #28a745;
+}
+
+.total-icon {
+  color: #007bff;
+}
+
+/* Topic Counts Text */
+.current-topics,
+.total-topics {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topics-count-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .current-topics,
+  .total-topics {
+    font-size: 1.2rem;
+  }
+
+  .topics-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topics-count-container {
+    padding: 15px;
+  }
+
+  .current-topics,
+  .total-topics {
+    font-size: 1rem;
+  }
+
+  .topics-icon {
+    font-size: 1.6rem;
+  }
+}

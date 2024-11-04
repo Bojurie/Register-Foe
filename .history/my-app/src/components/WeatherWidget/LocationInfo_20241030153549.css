@@ -1,0 +1,33 @@
+.LocationInfoContainer {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.LocationInfo p, .LocationInfo h2 {
+  margin: 8px 0;
+}
+
+.WeatherIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.Temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.Description {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .LocationInfoContainer {
+    padding: 10px;
+  }
+}

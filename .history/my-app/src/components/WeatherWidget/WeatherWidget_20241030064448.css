@@ -1,0 +1,24 @@
+/* WeatherWidget.css */
+.WeatherWidget {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0f4f8; /* Light background for contrast */
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth transition effects */
+}
+
+.Loading, .Error {
+  color: #ff4d4d; /* Distinct error color */
+  font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .WeatherWidget {
+    padding: 15px;
+    max-width: 90%; /* Ensure it fits smaller screens */
+  }
+}

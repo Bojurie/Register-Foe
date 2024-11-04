@@ -1,0 +1,28 @@
+.WeatherWidget {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.WeatherWidget-Content {
+  position: relative;
+  z-index: 2; /* Keep the content above the background */
+}
+
+.CurrentTime, .Location, .Temperature {
+  margin: 10px 0;
+}
+
+.WeatherIcon {
+  font-size: 3rem;
+}
+
+.WeatherDescription {
+  font-size: 1.5rem;
+}
+
+.Error {
+  color: red;
+}

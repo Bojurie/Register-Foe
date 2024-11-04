@@ -1,0 +1,31 @@
+.calendarWidget {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.currentDay {
+  background-color: #ffebcc !important;
+  color: #333;
+}
+
+.reminderDay {
+  background-color: #d1e7dd !important;
+  color: #333;
+}
+
+.modalContent {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.noRemindersText {
+  text-align: center;
+  color: gray;
+  font-size: 0.9rem;
+}

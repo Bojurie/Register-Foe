@@ -1,0 +1,43 @@
+.WeatherWidget {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.CurrentTime,
+.Location,
+.Temperature {
+  margin: 10px 0;
+}
+
+.WeatherIcon {
+  font-size: 3rem;
+}
+
+.WeatherDescription {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .WeatherWidget {
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+
+  .WeatherIcon {
+    font-size: 2rem;
+  }
+
+  .WeatherDescription {
+    font-size: 1.2rem;
+  }
+
+  .CurrentTime,
+  .Location {
+    font-size: 1rem;
+  }
+}

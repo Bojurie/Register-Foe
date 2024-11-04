@@ -1,0 +1,75 @@
+/* General Topic Styles */
+.topic {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.topic p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.topic-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.topic-stats button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reaction-button {
+  background-color: #cbcbc9;
+}
+
+.reaction-button:hover {
+  background-color: #e0e0e0;
+}
+
+.comment-button {
+  background-color: #fdf5d6;
+}
+
+.comment-button:hover {
+  background-color: #ffe680;
+}
+
+.delete-button {
+  background-color: #ffebe6;
+}
+
+.delete-button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .topic {
+    padding: 12px;
+  }
+
+  .topic h4 {
+    font-size: 1.2rem;
+  }
+
+  .topic p {
+    font-size: 0.85rem;
+  }
+}

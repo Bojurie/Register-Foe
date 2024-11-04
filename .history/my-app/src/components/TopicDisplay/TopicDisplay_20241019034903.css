@@ -1,0 +1,121 @@
+.topic-display {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.topic-display h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.topic-display p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.date-info {
+  margin-top: 10px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.topic-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.topic-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.topic-actions button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.like-button {
+  background-color: #36a2eb;
+  color: white;
+}
+
+.dislike-button {
+  background-color: #ff6384;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f94f4f;
+  color: white;
+}
+
+.comments-button {
+  background-color: #ffce56;
+  color: white;
+}
+
+.topic-comments {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.topic-comments h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.comment-bubble {
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.comment-bubble span {
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .topic-display {
+    padding: 15px;
+  }
+
+  .topic-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topic-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

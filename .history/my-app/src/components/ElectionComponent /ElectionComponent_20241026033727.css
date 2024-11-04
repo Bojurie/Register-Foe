@@ -1,0 +1,81 @@
+.ElectionComponent {
+  margin: 20px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ElectionComponent h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ElectionComponent-content p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.candidates-ranking {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.candidate-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.leading {
+  background: #e7f5ff;
+  border: 2px solid #007bff;
+}
+
+.leading-label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.leading-icon {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+.medal-icon {
+  color: #a6a6a6;
+  margin-right: 5px;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+.VoteStatusMessage {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.VoteStatusMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.VoteStatusMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

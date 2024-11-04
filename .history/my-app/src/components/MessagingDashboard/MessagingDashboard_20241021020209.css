@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+  --light-background: #f4f4f4;
+  --text-dark: #333;
+  --text-light: #fff;
+  --border-color: rgba(215, 213, 213, 0.657);
+}
+
+.MessagingDashboard-Container {
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 800px;
+  background: var(--light-background);
+  border: 1px solid var(--border-color);
+}
+
+.MessagingDashboard-Header {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.MessagingDashboard-Tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.MessagingTab {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.MessagingTab.active {
+  background: var(--primary-color);
+  color: var(--text-light);
+  transform: scale(1.05);
+}
+
+.MessagingDashboard-Content {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.MessageInput input {
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+.MessageInput button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-radius: 5px;
+  cursor: pointer;
+}

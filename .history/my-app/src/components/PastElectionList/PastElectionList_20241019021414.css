@@ -1,0 +1,47 @@
+.PastElections {
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0px;
+  transition: all 0.3s ease;
+  position: relative; 
+  border: 1px solid rgba(215, 213, 213, 0.657);
+  background: #f9f9f9;
+}
+
+.PastElections:hover {
+    color: #ffffff;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.PastElections h2 {
+  cursor: pointer;
+}
+
+.PastElections-Item {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transition: height 0.5s ease;
+}
+
+.PastElections-Item::-webkit-scrollbar {
+  width: 10px;
+}
+
+.PastElections-Item::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.PastElections-Item::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.PastElections-Item::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

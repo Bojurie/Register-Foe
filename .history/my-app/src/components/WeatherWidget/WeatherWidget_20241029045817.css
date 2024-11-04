@@ -1,0 +1,33 @@
+/* WeatherWidget.css */
+.weather {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Error {
+  color: red;
+}
+
+.WeatherWidget-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CurrentTime,
+.Location,
+.Temperature {
+  margin: 10px 0;
+}
+
+.Temperature {
+  display: flex;
+  align-items: center;
+}
+
+.WeatherIcon {
+  margin-right: 10px;
+}
+
+/* Add more specific styles as necessary */

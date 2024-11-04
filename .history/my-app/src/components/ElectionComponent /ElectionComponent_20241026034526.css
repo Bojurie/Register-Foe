@@ -1,0 +1,99 @@
+.ElectionComponent {
+  margin: 20px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #e5e5e573, #c5c5c591);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ElectionComponent:hover {
+  background: #f9f9f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ElectionComponent h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ElectionComponent-details {
+  margin-top: 10px;
+  color: #666;
+}
+
+.ElectionComponent-details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.ElectionComponent-details span {
+  font-weight: bold;
+  color: #333;
+}
+
+.candidate-ranking {
+  margin-top: 15px;
+}
+
+.leading-candidate {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.leader-icon {
+  margin-right: 5px;
+  color: #f1c40f;
+  font-size: 1.2rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.ElectionComponent-candidates {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.candidate-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.rank-icon {
+  color: #ffce56;
+  font-size: 1.1rem;
+}
+
+.candidate-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .ElectionComponent {
+    padding: 12px;
+  }
+
+  .candidate-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,64 @@
+.ElectionComponent {
+  margin: 20px 0px;
+  padding: 15px;
+background: linear-gradient(135deg, #e5e5e573, #c5c5c591);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ElectionComponent:hover {
+  background: #f9f9f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ElectionComponent p {
+  margin: 5px 0;
+}
+
+.ElectionComponent ul {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ElectionComponent-content {
+  text-align: center;
+}
+
+.ElectionComponent li {
+  font-size: 1rem;
+  color: #444;
+  list-style: none;
+  flex: 1 1 45%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .ElectionComponent {
+    padding: 12px;
+  }
+
+  .ElectionComponent ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ElectionComponent li {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ElectionComponent {
+    padding: 10px;
+  }
+
+  .ElectionComponent li {
+    font-size: 0.9rem;
+  }
+}

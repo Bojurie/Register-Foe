@@ -1,0 +1,169 @@
+/* Global styles for core tags */
+html, body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff; 
+}
+button {
+    background-color: #7d0808;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+button:hover {
+  background-color: #162251;
+  color:rgb(255, 255, 255);
+  scale: 1.1;
+
+}
+
+/* General settings for headings */
+h1, h2, h3, h4,h5, p, a {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4; /* Improved readability */
+    color: #162251;
+ }
+
+/* Responsive design starts with mobile first */
+h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+    text-transform: capitalize;
+
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px 0px;
+}
+
+p {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+}
+
+/* Responsive Media Queries */
+
+/* Tablets and larger screens (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: .9rem;
+  }
+
+  h2 {
+    font-size: .8rem;
+  }
+
+  h3 {
+    font-size: .7rem;
+    margin: 0px 10px;
+  }
+
+  h4 {
+    font-size: .8rem;
+  }
+
+  p {
+    font-size: .7rem;
+  }
+
+  a {
+    font-size: .6rem;
+  }
+}
+
+/* Laptops and desktops (min-width: 992px) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 0px 15px;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
+  a {
+    font-size: .7rem;
+  }
+}
+
+/* Large desktops (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: .9em;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
+  a {
+    font-size: .9rem;
+  }
+}

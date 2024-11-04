@@ -1,0 +1,49 @@
+.elections-count-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+background-color: #f8f9fc;  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.elections-count-box {
+  display: flex;
+  gap: 20px;
+}
+
+.elections-info {
+  text-align: center;
+}
+
+.icon-container {
+  display: inline-block;
+}
+
+.elections-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.current-icon {
+  color: #28a745;
+}
+
+.total-icon {
+  color: #007bff;
+}
+
+.current-elections,
+.total-elections {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}

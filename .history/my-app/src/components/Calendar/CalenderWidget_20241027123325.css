@@ -1,0 +1,19 @@
+/* CalendarWidget.module.css */
+
+.calendarWidget {
+  border-radius: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(215, 213, 213, 0.657);
+}
+
+.hasReminder {
+  background-color: #d1e7dd !important;
+}
+
+.noRemindersText {
+  text-align: center;
+  color: #666;
+  margin-top: 1rem;
+}

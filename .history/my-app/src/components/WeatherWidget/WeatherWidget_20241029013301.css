@@ -1,0 +1,96 @@
+.WeatherWidget {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #d4d4d4, -10px -10px 20px #ffffff;
+  text-align: center;
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+  transition: transform 0.3s ease;
+  position: relative; /* Set position relative for child absolute positioning */
+  overflow: hidden; /* Hide overflow for the background */
+}
+
+.WeatherWidget:hover {
+  transform: translateY(-5px);
+}
+
+.WeatherWidget-Content {
+  z-index: 1; /* Ensure the content is above the background */
+}
+
+.CurrentTime,
+.Location,
+.Temperature,
+.WeatherDescription {
+  margin: 10px 0;
+}
+
+.RainIcon,
+.SnowIcon {
+  font-size: 40px;
+}
+
+.DaytimeBackground {
+  background: linear-gradient(120deg, #87CEEB, #B0E0E6);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* Send the background behind the content */
+  animation: wave 20s infinite; /* Smooth background animation */
+}
+
+.NighttimeBackground {
+  background: linear-gradient(120deg, #2C3E50, #34495E);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* Send the background behind the content */
+}
+
+.Moon {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.Star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: twinkling 1.5s infinite alternate;
+}
+
+.Error {
+  color: red;
+}
+
+@keyframes twinkling {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

@@ -1,0 +1,289 @@
+/* Messaging Dashboard Container */
+.MessagingDashboard-Container {
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.5s ease;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff, #eced3c);
+  
+
+}
+
+.MessagingDashboard-Container:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+}
+/* Messaging Header */
+.MessagingDashboard-Header {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+/* Tabs */
+.MessagingDashboard-Tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.MessagingTab {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.MessagingTab.active {
+  background: #7d0808;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.MessagingTab:hover {
+  background: #162251;
+  color: #fff;
+}
+
+/* Dashboard Content */
+.MessagingDashboard-Content {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+/* Containers */
+.NewMessageContainer,
+.InboxContainer,
+.OutboxContainer {
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.OutboxContainer,
+.MessagesScrollable {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* User List */
+.UserList {
+  list-style: none;
+  padding: 0;
+}
+
+.UserItem {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.UserItem:hover,
+.UserItem.selected {
+  background: #e6f0ff;
+}
+
+/* New Message Form */
+.NewMessageForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.NewMessageForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.NewMessageForm button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.NewMessageForm button:disabled {
+  background: #ccc;
+}
+
+.NewMessageForm button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+/* Message Item */
+.MessageItem {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.MessageItem .new-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 0.8em;
+}
+
+/* Modal Styling */
+.MessageModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.MessageModalContent {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.3s ease;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Close Button */
+.CloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.CloseButton:hover {
+  color: #ff0000;
+}
+
+.MessageModalContent h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.MessageModalContent p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.MessageModalContent strong {
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .MessagingDashboard-Tabs {
+    flex-direction: column;
+  }
+
+  .MessagingTab {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .MessagingDashboard-Container {
+    padding: 15px;
+  }
+
+  .NewMessageForm textarea {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .MessageItem {
+    padding: 10px;
+  }
+
+  .MessageModalContent {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .MessageModalContent h3 {
+    font-size: 1.2rem;
+  }
+
+  .MessageModalContent p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .MessagingDashboard-Header {
+    font-size: 1.2em;
+  }
+
+  .NewMessageForm textarea {
+    font-size: 0.9em;
+  }
+
+  .MessagingTab {
+    padding: 8px 15px;
+  }
+}

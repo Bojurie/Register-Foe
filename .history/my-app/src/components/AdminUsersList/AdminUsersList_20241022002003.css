@@ -1,0 +1,58 @@
+/* Admin Users List Styling */
+.Admin-User-List {
+  max-height: 400px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  border: 1px solid rgba(215, 213, 213, 0.657);
+}
+
+.Admin-User-List:hover{
+  color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+/* Admin Users Container */
+.Admin-User-List-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.Admin-User-List-Container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Admin-User-List-Container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.Admin-User-List-Container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Admin-User-List {
+    padding: 10px;
+    margin: 8px 0;
+  }
+
+
+
+  .Admin-User-List-Container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Admin-User-List {
+    padding: 8px;
+  }
+
+}

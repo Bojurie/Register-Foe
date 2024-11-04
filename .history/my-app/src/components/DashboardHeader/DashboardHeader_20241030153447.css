@@ -1,0 +1,19 @@
+.DashboardHeader {
+  background: linear-gradient(135deg, #1e3a8a, #6c7ae0);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.DashboardHeader h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+}

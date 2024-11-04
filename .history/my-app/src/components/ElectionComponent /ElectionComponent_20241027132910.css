@@ -1,0 +1,140 @@
+.election-container {
+  margin: 20px 0;
+  padding: 20px;
+background-color: #f8f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #333;
+}
+
+.election-container:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.election-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.election-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.candidate-list
+.election-type {
+  background: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.election-details {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.details-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.details-dates p,
+.location,
+.description {
+  margin: 5px 0;
+  color: #666;
+}
+
+.location span,
+.description span {
+  font-weight: bold;
+}
+
+.candidates-section {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.leading-candidate {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leading-candidate .trophy-icon {
+  font-size: 1.4rem;
+  color: #ffd700;
+  margin-right: 8px;
+}
+
+.candidate-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.candidate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.candidate-item > li {
+list-style-type: none;
+
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #ffce56;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .election-container {
+    padding: 15px;
+  }
+
+  .election-title {
+    font-size: 1rem;
+  }
+
+  .candidates-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-dates {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .candidate-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

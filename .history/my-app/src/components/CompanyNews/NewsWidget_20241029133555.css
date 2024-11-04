@@ -1,0 +1,120 @@
+.NewsWidget-Wrapper {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow:0px 4px 12px rgb(40 64 74 / 49%);
+background-color: #f8f9fc;
+  border: 1px solid rgba(215, 213, 213, 0.657);
+  border-radius: 10px;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.NewsWidget-Wrapper:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.message {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.message.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.message button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+/* Sticky header for the h2 */
+.NewsWidget-Header {
+  cursor: pointer;
+  position: sticky;
+
+}
+
+/* The news content */
+.news-widget {
+  flex-grow: 1;
+  overflow-y: auto;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.news-widget-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbar styling */
+.news-widget-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-widget-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.news-widget-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+  z-index: 10;
+  padding: 10px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .NewsWidget-Wrapper {
+    padding: 10px;
+  }
+
+  .news-widget {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NewsWidget-Wrapper {
+    padding: 8px;
+  }
+
+  .news-widget {
+    max-height: 200px;
+  }
+}

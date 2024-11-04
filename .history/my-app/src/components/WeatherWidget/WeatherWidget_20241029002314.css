@@ -1,0 +1,103 @@
+.WeatherWidget {
+  padding: 20px;
+  background-color: #f8f9fc;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #d4d4d4, -10px -10px 20px #ffffff;
+  text-align: center;
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.WeatherWidget:hover {
+  transform: translateY(-5px);
+}
+
+.WeatherWidget-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.CurrentTime {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.Location {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.Temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WeatherDescription {
+  font-size: 1rem;
+  color: #555;
+}
+
+.WeatherIcon {
+  margin-right: 8px;
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.RainAnimation, .SnowAnimation, .ThunderstormAnimation {
+  font-size: 3rem;
+}
+
+.Error {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Droplet and Snowflake styles */
+.Droplet {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  left: calc(50% - 2.5px); /* Center it */
+}
+
+.Snowflake {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  left: calc(50% - 4px); /* Center it */
+}
+
+/* Adjust positioning for snowflakes and droplets */
+.RainAnimation, .SnowAnimation {
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .WeatherWidget {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .Temperature {
+    font-size: 1.5rem;
+  }
+
+  .CurrentTime {
+    font-size: 1rem;
+  }
+}

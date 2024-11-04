@@ -1,0 +1,31 @@
+.how-it-works-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.step {
+  max-width: 300px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    max-width: 100%;
+  }
+}

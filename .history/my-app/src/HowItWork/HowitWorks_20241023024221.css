@@ -1,0 +1,19 @@
+.how-it-works-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 40px;
+}
+
+.step {
+  max-width: 300px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

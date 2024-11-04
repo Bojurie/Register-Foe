@@ -1,0 +1,22 @@
+/* ReminderModal.module.css */
+
+.modalContent {
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalContent button {
+  background-color: #162251;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

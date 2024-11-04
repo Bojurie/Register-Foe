@@ -1,0 +1,41 @@
+.topics-count-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
+
+.topics-count-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topics-count-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.topics-icon {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.total-topics {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 1rem;
+  text-align: center;
+}

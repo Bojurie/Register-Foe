@@ -1,0 +1,64 @@
+.CommentSection {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AddComment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 8px rgba(25, 118, 210, 0.2);
+}
+
+.CommentBox {
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.CommentBox:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.CommentBox p {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 16px;
+}
+
+.Comment-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.Comment-actions svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Comment-actions svg:hover {
+  color: #1976d2;
+}

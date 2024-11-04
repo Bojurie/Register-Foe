@@ -1,0 +1,22 @@
+/* WeatherWidget.css */
+.WeatherWidget {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0f4f8;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.Loading, .Error {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .WeatherWidget {
+    padding: 15px;
+    max-width: 90%;
+  }
+}

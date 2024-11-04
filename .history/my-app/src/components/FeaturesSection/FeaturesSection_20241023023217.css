@@ -1,0 +1,16 @@
+.feature-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  padding: 20px;
+  text-align: center;
+}

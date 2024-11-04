@@ -1,0 +1,74 @@
+.NewsWidget-Wrapper {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  border: 1px solid rgba(215, 213, 213, 0.657);
+  border-radius: 10px;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.NewsWidget-Wrapper:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sticky header for the h2 */
+.NewsWidget-Header {
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* The news content */
+.news-widget {
+  flex-grow: 1;
+  overflow-y: auto;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.news-widget-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbar styling */
+.news-widget-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-widget-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.news-widget-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .NewsWidget-Wrapper {
+    padding: 10px;
+  }
+
+  .news-widget {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NewsWidget-Wrapper {
+    padding: 8px;
+  }
+
+  .news-widget {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,154 @@
+/* General Navbar Styles */
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  width: 100%;
+  background-color: #f8f9fc;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.Logo img {
+  width: 100%;
+  height: auto;
+}
+
+.Nav-Links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.Nav-Links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.Nav-Links a:hover {
+  color: #007bff;
+}
+
+/* Mobile Menu Icon */
+.MobileMenuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 4px;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Nav {
+    padding: 10px 15px;
+  }
+
+  .Nav-Links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .Nav-Links.open {
+    display: flex;
+  }
+
+  .Nav-Links li {
+    margin: 10px 0;
+  }
+
+  .MobileMenuIcon {
+    display: block;
+  }
+
+  .Logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Nav-Links {
+    width: 100%;
+    right: 0;
+  }
+
+  .Logo {
+    width: 120px;
+  }
+}
+
+/* Active Link Styling */
+.Nav-Links li {
+  display: flex;
+  justify-content: center;
+}
+
+.Nav-Links li:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown Active Menu */
+.Nav-Links.open {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

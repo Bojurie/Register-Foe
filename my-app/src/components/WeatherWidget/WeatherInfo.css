@@ -1,0 +1,52 @@
+.WeatherInfo {
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: #333;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.WeatherInfo:hover {
+  transform: translateY(-5px);
+}
+
+.WeatherIcon {
+  width: 80px; /* Adjust size as needed */
+  height: 80px;
+}
+
+.Temperature {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.Description {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .WeatherInfo {
+    padding: 15px;
+    max-width: 90%; /* Ensure it fits smaller screens */
+  }
+
+  .WeatherIcon {
+    width: 60px; /* Smaller icon for mobile */
+    height: 60px;
+  }
+
+  .Temperature {
+    font-size: 2rem; /* Adjusted temperature size */
+  }
+
+  .Description {
+    font-size: 1rem; /* Adjusted description size */
+  }
+}

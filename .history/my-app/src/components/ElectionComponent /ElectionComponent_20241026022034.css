@@ -1,0 +1,83 @@
+.ElectionComponent {
+  margin: 20px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #e5e5e573, #c5c5c591);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ElectionComponent:hover {
+  background: #f9f9f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ElectionComponent h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.ElectionComponent p {
+  margin: 5px 0;
+  color: #555;
+  text-align: center;
+}
+
+.ElectionComponent ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.candidate-item {
+  font-size: 1rem;
+  color: #444;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.trophy-icon {
+  color: #f1c40f;
+  font-size: 1.2rem;
+  animation: trophyBounce 1.2s ease-in-out infinite;
+}
+
+@keyframes trophyBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.vote-percentage {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .ElectionComponent ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .ElectionComponent h2 {
+    font-size: 1.3rem;
+  }
+
+  .candidate-item {
+    font-size: 0.9rem;
+  }
+}
